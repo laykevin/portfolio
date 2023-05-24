@@ -5,7 +5,10 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="devicons.css">
+  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" /> -->
+  <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet"> -->
@@ -25,7 +28,8 @@
       </div>
     </div>
   </nav>
-  <div class="bg-secondary">
+
+  <div id="about-me" class="bg-secondary">
     <div class="container d-flex flex-wrap justify-content-evenly py-2 bg-secondary-subtle">
       <img class="profile-picture img-fluid" src="/images/kevin-lay.jpg" alt="kevin-lay">
       <div class="col-md-6 col-12">
@@ -35,15 +39,11 @@
           PostgreSQL and more. When I have free time, I am constantly tinkering with code and self-learning to further develop my
           abilities.
         </p>
-        <h5>Technical Skills</h5>
-        <p>
-          <span class="fw-bold">Strong</span>: React, JavaScript (ES6/ES5), HTML5, CSS3, Bootstrap
-          <br />
-          <span class="fw-bold">Experienced</span>: Node, JSON, Flexbox, PostgreSQL, AJAX, Express
-          <br />
-          <span class="fw-bold">Tools</span>: git, GitHub, Visual Studio Code, Figma, Slack, LinkedIn
-        </p>
-        <h5>Education</h5>
+        <h4>Technical Skills</h4>
+          <div class="icons d-flex flex-wrap my-2">
+            <span class="devicons devicons-react"></span><span class="devicons devicons-javascript"></span><span class="devicons devicons-html5"></span><span class="devicons devicons-css3"></span><span class="devicons devicons-bootstrap"></span><span class="devicons devicons-nodejs_small"></span><span class="devicons devicons-postgresql"></span><span class="devicons devicons-github_badge"></span><span class="devicons devicons-visualstudio"></span>
+          </div>
+        <h4>Education</h4>
         <p>
           <span class="fw-bold">LearningFuze Accelerated Web Development Program</span>
         </p>
@@ -51,6 +51,54 @@
           Programmed for 10-12 hours per day for 14 weeks in a simulated work environment with guidance from senior developers.
         </p>
       </div>
+    </div>
+  </div>
+
+  <div id="projects" class="bg-secondary-subtle">
+    <div class="container bg-light">
+      <h1 class="">Projects</h1>
+      <h2 class="text-center">Mario Mart</h2>
+      <div class="d-flex flex-wrap py-2">
+        <div class="col-md-4 col-12 px-3">
+          <p class="text-center"><b>A full-stack e-commerce site for Mario Kart fans who want to buy Mario Kart items!</b></p>
+          <ul>
+            <li>Developed a responsive, interactive, and fluid user interface using React, Bootstrap 5 and CSS3.</li>
+            <li>Implemented server-side REST API using Node and Express to handle HTTP requests and send responses.</li>
+            <li>Employed PostgreSQL to establish and manage the application's database and leveraged the node-postgres package to
+            handle database interactions.</li>
+            <li>Successfully deployed to Azure App Service providing accessibility to users worldwide.</li>
+          </ul>
+          <a href="https://mariomart.azurewebsites.net/" target="_blank">Check out Mario Mart here!</a>
+        </div>
+        <img class="mariomart-img img-fluid col-md-8 col-12" src="/images/mario-mart-cart-demo.gif" alt="mariomart">
+      </div>
+    </div>
+  </div>
+
+  <div id="project2" class="bg-dark-subtle">
+    <div class="container bg-secondary-subtle">
+      <h2 class="text-center">PokeJournal</h2>
+      <div class="d-flex flex-wrap py-2">
+        <img class="mariomart-img img-fluid col-md-8 col-12" src="/images/pokejournal-demo.gif" alt="mariomart">
+        <div class="col-md-4 col-12 px-3">
+          <p class="text-center"><b>A web app made for Pokémon fans who want to keep entries of their Pokémon!</b></p>
+          <ul>
+            <li>Created a robust user interface using HTML5.</li>
+            <li>Incorporated CSS3 to provide a visually appealing design and to fluidly adapt from mobile to desktop view.</li>
+            <li>Utilized JavaScript to provide functionality, create and append DOM trees, and create an interactive interface.</li>
+            <li>Integrated API communication by leveraging AJAX requests to retrieve and store the necessary data for the application's
+            operation.</li>
+            </ul>
+          <a href="https://laykevin.github.io/pokejournal/" target="_blank">Check out PokeJournal here!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="bg-secondary">
+    <div class="container bg-dark-subtle">
+      <h1>Contact Me</h1>
+
     </div>
   </div>
 </body>

@@ -1,5 +1,5 @@
 .profile-picture {
-  width: 20rem;
+  width: 22rem;
   /* height:25rem; */
 }
 
@@ -7,4 +7,20 @@ a {
   /* font-family: 'Denk One'; */
   font-size: 1.5rem;
   color: #06BC9B;
+}
+
+.mariomart-img {
+  /* width: 50rem; */
+}
+
+.icons {
+  font-size: 3rem;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  padding: 1rem 0;
 }
